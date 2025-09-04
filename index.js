@@ -19,7 +19,9 @@ app.get('/youtube', (req,res)=>{
 app.get('/login', (req,res)=>{
     res.send("<h1>This is login Page</h1>")
 })
-
+app.get('/home', (req,res)=>{
+    res.send("<h2>This is Home Page</h2>")
+})
 
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
